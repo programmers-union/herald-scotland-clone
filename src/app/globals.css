@@ -40,3 +40,1147 @@ a {
     color-scheme: dark;
   }
 }
+
+/* .............................Header styles............................ */
+
+.herald-header {
+  font-family: Georgia, serif;
+}
+.width100 {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.top-nav {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  font-size: 13px;
+}
+
+.top-nav a {
+  color: #6c757d;
+  text-decoration: none;
+  padding: 0px 12px;
+  display: inline-block;
+  transition: color 0.2s;
+}
+
+.top-nav a:hover {
+  color: #495057;
+}
+
+.logo-section {
+  background-color: white;
+  
+}
+
+.logo {
+  font-family: "Times New Roman", serif;
+  font-size: 48px;
+  font-weight: normal;
+  color: #2c3e50;
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+
+.logo:hover {
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+.header-buttons {
+  gap: 10px;
+}
+
+.btn-subscribe {
+  background-color: #f4e4b8;
+  border: 1px solid #e6d7a3;
+  color: #8b7355;
+  font-size: 13px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.btn-subscribe:hover {
+  background-color: #f0dfa8;
+  color: #8b7355;
+}
+
+.btn-secondary-custom {
+  background-color: transparent;
+  border: 1px solid #dee2e6;
+  color: #6c757d;
+  font-size: 13px;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.btn-secondary-custom:hover {
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+.main-nav {
+  background-color: #2c3e50;
+  padding: 0;
+  
+}
+
+.main-nav .navbar-nav {
+  width: 100%;
+}
+
+.main-nav .nav-link {
+  color: white !important;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0px 20px;
+  transition: background-color 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.main-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 4px 8px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.search-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.user-icon {
+  background: none;
+  border: none;
+  color: #6c757d;
+  font-size: 16px;
+  padding: 8px;
+}
+
+@media (max-width: 991px) {
+  .logo {
+    font-size: 36px;
+  }
+
+  .header-buttons {
+    margin-top: 15px;
+  }
+
+  .main-nav .nav-link {
+    padding: 12px 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .top-nav {
+    font-size: 12px;
+  }
+
+  .top-nav a {
+    padding: 6px 8px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .btn-subscribe,
+  .btn-secondary-custom {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+
+
+/* ..........................featuredNewsLetter component styles............................. */
+
+ .featured-section {
+          background-color: #f8f9fa;
+          border-top: 1px solid #e9ecef;
+          border-bottom: 1px solid #e9ecef;
+          font-family: Georgia, serif;
+          padding: 15px 0;
+        }
+        
+        .featured-newsletters {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 15px;
+        }
+        
+        .featured-title {
+          color: #6c757d;
+          font-size: 14px;
+          font-weight: normal;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          white-space: nowrap;
+        }
+        
+        .star-icon {
+          color: #6c757d;
+          font-size: 12px;
+          margin-right: 8px;
+        }
+        
+        .newsletter-links {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          align-items: center;
+        }
+        
+        .newsletter-link {
+          color: #6c757d;
+          text-decoration: none;
+          font-size: 14px;
+          transition: color 0.2s;
+          white-space: nowrap;
+        }
+        
+        .newsletter-link:hover {
+          color: #495057;
+          text-decoration: none;
+        }
+        
+        .employment-section {
+          background-color: #f5f5f5;
+          border-bottom: 1px solid #e9ecef;
+          font-family: Georgia, serif;
+          padding: 20px 0;
+        }
+        
+        .employment-title {
+          color: #5a6c7d;
+          font-size: 16px;
+          font-weight: normal;
+          margin: 0;
+          line-height: 1.4;
+        }
+        
+        .employment-link {
+          color: #5a6c7d;
+          text-decoration: underline;
+          transition: color 0.2s;
+        }
+        
+        .employment-link:hover {
+          color: #495057;
+          text-decoration: underline;
+        }
+        
+        @media (max-width: 991px) {
+          .featured-newsletters {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+          }
+          
+          .newsletter-links {
+            gap: 15px;
+          }
+          
+          .featured-title {
+            margin-bottom: 5px;
+          }
+        }
+        
+        @media (max-width: 768px) {
+          .featured-section {
+            padding: 12px 0;
+          }
+          
+          .employment-section {
+            padding: 15px 0;
+          }
+          
+          .newsletter-links {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+            width: 100%;
+          }
+          
+          .featured-title {
+            font-size: 13px;
+          }
+          
+          .newsletter-link {
+            font-size: 13px;
+          }
+          
+          .employment-title {
+            font-size: 15px;
+          }
+        }
+        
+        @media (max-width: 576px) {
+          .featured-section {
+            padding: 10px 0;
+          }
+          
+          .employment-section {
+            padding: 12px 0;
+          }
+          
+          .featured-newsletters {
+            gap: 8px;
+          }
+          
+          .newsletter-links {
+            gap: 6px;
+          }
+        }
+
+        /* ..........................ArticleSection component styles............................... */
+
+
+         .article-section {
+          font-family: Georgia, serif;
+          padding: 40px 0;
+          background-color: #ffffff;
+        }
+        
+        .article-headline1 {
+          color: #333;
+          font-size: 35px;
+          font-weight:500;
+          line-height: 1.2;
+          margin-bottom: 25px;
+          font-family: Georgia, serif;
+        }
+        
+        .article-excerpt {
+          color: #333;
+          font-size: 16px;
+          line-height: 1.6;
+          margin-bottom: 20px;
+          font-weight: normal;
+        }
+        
+        .article-category {
+          color: #6c757d;
+          font-size: 12px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-weight: 500;
+          margin-bottom: 0;
+        }
+        
+        .article-image-container {
+          position: relative;
+          overflow: hidden;
+          border-radius: 0;
+        }
+        
+        .article-image-news-bus {
+          width: 100%;
+          height: 400px;
+          object-fit: cover;
+          display: block;
+        }
+        
+        .image-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(45deg, 
+            rgba(220, 20, 60, 0.4) 0%, 
+            rgba(255, 69, 0, 0.4) 50%, 
+            rgba(138, 43, 226, 0.4) 100%);
+          mix-blend-mode: multiply;
+        }
+        
+        .author-tag {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          background-color: rgba(0, 0, 0, 0.7);
+          color: white;
+          padding: 8px 16px;
+          font-size: 12px;
+          font-weight: 500;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+        
+        @media (max-width: 1199px) {
+          .article-headline1 {
+            font-size: 42px;
+          }
+          
+          .article-image-news-bus {
+            height: 350px;
+          }
+        }
+        
+        @media (max-width: 991px) {
+          .article-section {
+            padding: 30px 0;
+          }
+          
+          .article-headline1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+          }
+          
+          .article-excerpt {
+            font-size: 16px;
+            margin-bottom: 25px;
+          }
+          
+          .article-image {
+            height: 300px;
+            margin-top: 20px;
+          }
+        }
+        
+        @media (max-width: 768px) {
+          .article-section {
+            padding: 20px 0;
+          }
+          
+          .article-headline1 {
+            font-size: 28px;
+            line-height: 1.3;
+          }
+          
+          .article-excerpt {
+            font-size: 15px;
+          }
+          
+          .article-image {
+            height: 250px;
+          }
+          
+          .author-tag {
+            top: 15px;
+            left: 15px;
+            padding: 6px 12px;
+            font-size: 11px;
+          }
+        }
+        
+        @media (max-width: 576px) {
+          .article-section {
+            padding: 15px 0;
+          }
+          
+          .article-headline1 {
+            font-size: 24px;
+          }
+          
+          .article-excerpt {
+            font-size: 14px;
+          }
+          
+          .article-image {
+            height: 200px;
+          }
+          
+          .author-tag {
+            top: 10px;
+            left: 10px;
+            padding: 5px 10px;
+            font-size: 10px;
+          }
+        }
+
+        /* .................NewsCard component styles......................... */
+
+          .NewsCard-container {
+          font-family: Georgia, serif;
+          background-color: white;
+          border-radius: 0;
+          overflow: hidden;
+          box-shadow: none;
+          border: none;
+          max-width: 400px;
+          margin: 0 auto;
+        }
+        
+        .NewsCard-image-wrapper {
+          position: relative;
+          overflow: hidden;
+          background-color: #f8f9fa;
+        }
+        
+        .NewsCard-image {
+          width: 100%;
+          height: 250px;
+          object-fit: cover;
+          display: block;
+          transition: transform 0.3s ease;
+        }
+                .NewsCard-image-small {
+          width: 100%;
+          height: 180px;
+          object-fit: cover;
+          display: block;
+          transition: transform 0.3s ease;
+        }
+        
+        .NewsCard-image:hover {
+          transform: scale(1.05);
+        }
+        
+        .NewsCard-exclusive-tag {
+          position: absolute;
+          top: 15px;
+          left: 15px;
+          background-color: #2c3e50;
+          color: white;
+          padding: 6px 12px;
+          font-size: 11px;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          border-radius: 0;
+        }
+        
+        /* .NewsCard-content {
+          padding: 20px;
+        } */
+        
+        .NewsCard-category {
+          color: #6c757d;
+          font-size: 12px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-weight: 700;
+          margin-bottom: 12px;
+          display: block;
+        }
+        
+        .NewsCard-headline {
+          color: #333;
+          font-size: 17px;
+          font-weight: bold;
+          line-height: 1.3;
+          margin-bottom: 0;
+          font-family: Georgia, serif;
+          text-decoration: none;
+          display: block;
+          transition: color 0.2s ease;
+        }
+        
+        .NewsCard-headline:hover {
+          color: #1a252f;
+          text-decoration: none;
+        }
+        
+        .NewsCard-link {
+          text-decoration: none;
+          color: inherit;
+          display: block;
+        }
+        
+        .NewsCard-link:hover {
+          text-decoration: none;
+          color: inherit;
+        }
+        
+        @media (max-width: 768px) {
+          .NewsCard-container {
+            max-width: 100%;
+          }
+          
+          .NewsCard-image {
+            height: 220px;
+          }
+
+                    .NewsCard-image-small {
+            height: 220px;
+          }
+          
+          .NewsCard-content {
+            padding: 16px;
+          }
+          
+          .NewsCard-headline {
+            font-size: 20px;
+          }
+          
+          .NewsCard-exclusive-tag {
+            top: 12px;
+            left: 12px;
+            padding: 5px 10px;
+            font-size: 10px;
+          }
+        }
+        
+        @media (max-width: 576px) {
+          .NewsCard-image {
+            height: 200px;
+          }
+                    .NewsCard-image-small{
+            height: 200px;
+          }
+          
+          .NewsCard-content {
+            padding: 14px;
+          }
+          
+          .NewsCard-headline {
+            font-size: 18px;
+          }
+          
+          .NewsCard-category {
+            font-size: 11px;
+            margin-bottom: 10px;
+          }
+          
+          .NewsCard-exclusive-tag {
+            top: 10px;
+            left: 10px;
+            padding: 4px 8px;
+            font-size: 9px;
+          }
+        }
+        
+        @media (max-width: 400px) {
+          .NewsCard-image {
+            height: 180px;
+          }
+                    .NewsCard-image-small {
+            height: 180px;
+          }
+          
+          .NewsCard-content {
+            padding: 12px;
+          }
+          
+          .NewsCard-headline {
+            font-size: 16px;
+            line-height: 1.4;
+          }
+        }
+
+        /* .............................ImageAndtitle component styles................................. */
+
+
+         .investing-article {
+          font-family: Georgia, serif;
+          background-color: white;
+          padding: 0;
+        }
+        
+        .article-link {
+          text-decoration: none;
+          color: inherit;
+          display: block;
+          transition: opacity 0.2s ease;
+        }
+        
+        .article-link:hover {
+          text-decoration: none;
+          color: inherit;
+          opacity: 0.9;
+        }
+        
+        .article-image {
+          width: 100%;
+          height: 80px;
+          object-fit: cover;
+          display: block;
+        }
+        
+        .article-content {
+          padding-left: 15px;
+        }
+        
+        .article-category {
+          color: #6c757d;
+          font-size: 12px;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          font-weight: 500;
+          margin-bottom: 5px;
+          display: block;
+        }
+        
+        .article-headline {
+          color: #333;
+          font-size: 18px;
+          font-weight: normal;
+          line-height: 1.3;
+          margin-bottom: 0;
+          font-family: Georgia, serif;
+        }
+        
+        @media (max-width: 768px) {
+          .article-image {
+            height: 70px;
+          }
+          
+          .article-content {
+            padding-left: 12px;
+          }
+          
+          .article-headline {
+            font-size: 16px;
+          }
+          
+          .article-category {
+            font-size: 11px;
+          }
+        }
+        
+        @media (max-width: 576px) {
+          .investing-article {
+            flex-direction: column;
+          }
+          
+          .article-image {
+            width: 100%;
+            height: 120px;
+            margin-bottom: 10px;
+          }
+          
+          .article-content {
+            padding-left: 0;
+            width: 100%;
+          }
+          
+          .article-headline {
+            font-size: 18px;
+            line-height: 1.4;
+          }
+          
+          .article-category {
+            margin-bottom: 8px;
+          }
+        }
+        
+        @media (max-width: 400px) {
+          .article-headline {
+            font-size: 16px;
+          }
+          
+          .article-image {
+            height: 100px;
+          }
+        }
+
+        /* ...........................NewsSection component styles..................................... */
+
+          .news-section {
+          max-width: 100%;
+          
+        }
+
+        .active-tab {
+          color: #000 !important;
+          font-weight: 600;
+          border: none !important;
+          background: none !important;
+          font-size: 1.1rem;
+        }
+
+        .active-tab::after {
+          content: '';
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          right: 0;
+          height: 3px;
+          background-color: #FFE7BD;;
+          border-radius: 2px 2px 0 0;
+        }
+
+        .inactive-tab {
+          color: #666 !important;
+          font-weight: 400;
+          border: none !important;
+          background: none !important;
+          font-size: 1.1rem;
+        }
+
+        .news-item {
+          /* padding: 0.75rem 0; */
+          border-bottom: 1px solid transparent;
+          /* transition: all 0.2s ease; */
+        }
+
+        /* .news-item:hover {
+          /* background-color: #f8f9fa;
+          border-radius: 4px;
+          padding-left: 0.5rem;
+          padding-right: 0.5rem; 
+      }*/
+         
+
+        .news-number {
+          font-size: 1.8rem;
+          font-weight: 600;
+          color: #333;
+          min-width: 25px;
+          text-align: left;
+        }
+
+        .news-title {
+          font-size: 1rem;
+          /* line-height: 1.4; */
+          color: #333;
+          font-weight:500;
+          cursor: pointer;
+          transition: color 0.2s ease;
+        }
+
+        .news-title:hover {
+         font-weight:bold;
+        }
+
+        .show-more-btn {
+          
+          border: none;
+          color: #333;
+          background-color: #FFE7BD;
+          padding: 0.50rem 1rem;
+          border-radius: 25px;
+          font-weight: 500;
+          font-size: 0.9rem;
+          transition: all 0.3s ease;
+          position: relative;
+          top: -1rem;
+       
+        }
+
+        .show-more-btn:hover {
+         
+          transform: translateY(-1px);
+          box-shadow: 0 2px 8px rgba(244, 196, 48, 0.3);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+          .news-number {
+            font-size: 1rem;
+            min-width: 20px;
+          }
+          
+          .news-title {
+            font-size: 0.9rem;
+          }
+          
+          .active-tab, .inactive-tab {
+            font-size: 1rem;
+          }
+          
+          .show-more-btn {
+            padding: 0.6rem 1.5rem;
+            font-size: 0.85rem;
+          }
+        }
+
+        @media (max-width: 576px) {
+          .news-item {
+            padding: 0.5rem 0;
+          }
+          
+          .news-title {
+            font-size: 0.85rem;
+            line-height: 1.3;
+          }
+  
+        }
+
+
+        /* ....................columnist styles................. */
+
+          .columnists-section {
+         
+          padding: 40px 20px;
+        }
+        
+        .columnists-title {
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 2rem;
+          font-weight: bold;
+          color: #333;
+          margin-bottom: 30px;
+          text-align: left;
+        }
+        
+        
+        .columnist-card {
+          
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+          height: 100%;
+          text-decoration: none;
+          color: inherit;
+        }
+
+        
+        .columnist-image {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-bottom: 15px;
+        }
+        
+        .columnist-name {
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 1.2rem;
+          font-weight: bold;
+          color: #333;
+          margin-bottom: 10px;
+          line-height: 1.3;
+        }
+        
+        .columnist-title {
+          font-family: Arial, sans-serif;
+          font-size: 0.95rem;
+          color: #666;
+          line-height: 1.4;
+          margin-bottom: 0;
+        }
+        
+        .card-body {
+          padding: 20px;
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        
+        .navigation-section {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 30px;
+          gap: 15px;
+        }
+        
+        .nav-button {
+          background: none;
+          border: none;
+          color: #999;
+          font-size: 1rem;
+          cursor: pointer;
+          padding: 8px 16px;
+          transition: color 0.2s ease;
+        }
+        
+        .nav-button:hover {
+          color: #333;
+        }
+        
+        .nav-button:disabled {
+          color: #ccc;
+          cursor: not-allowed;
+        }
+        
+        .nav-dots {
+          display: flex;
+          gap: 8px;
+          align-items: center;
+        }
+        
+        .nav-dot {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: #ddd;
+          cursor: pointer;
+          transition: background-color 0.2s ease;
+        }
+        
+        .nav-dot.active {
+          background-color: #007bff;
+        }
+        
+        @media (max-width: 768px) {
+          .columnists-title {
+            font-size: 2rem;
+            text-align: center;
+          }
+          
+          .columnist-card {
+            margin-bottom: 20px;
+          }
+          
+          .card-body {
+            text-align: center;
+            align-items: center;
+          }
+        }
+        
+        @media (max-width: 576px) {
+          .columnists-section {
+            padding: 20px 10px;
+          }
+          
+          .columnists-title {
+            font-size: 1.8rem;
+          }
+          
+          .columnist-name {
+            font-size: 1.1rem;
+          }
+          
+          .columnist-title {
+            font-size: 0.9rem;
+          }
+        }
+
+        /* .................Footer styles..................................... */
+
+
+           .site-footer {
+          background-color: #1a1a1a;
+          color: #ffffff;
+          padding: 40px 0 20px;
+          font-family: Arial, sans-serif;
+        }
+        
+        .footer-links {
+          margin-bottom: 40px;
+        }
+        
+        .footer-link {
+          color: #ffffff;
+          text-decoration: none;
+          font-size: 14px;
+          line-height: 1.6;
+          display: block;
+          margin-bottom: 8px;
+          transition: color 0.2s ease;
+        }
+        
+        .footer-link:hover {
+          color: #cccccc;
+          text-decoration: none;
+        }
+        
+        .footer-bottom {
+          border-top: 1px solid #333333;
+          padding-top: 30px;
+        }
+        
+        .ipso-logo {
+          background-color: #00bcd4;
+          color: white;
+          padding: 8px 12px;
+          border-radius: 4px;
+          font-weight: bold;
+          font-size: 14px;
+          display: inline-block;
+          margin-bottom: 20px;
+        }
+        
+        .footer-text {
+          font-size: 13px;
+          line-height: 1.5;
+          color: #cccccc;
+          margin-bottom: 15px;
+        }
+        
+        .footer-text a {
+          color: #ffffff;
+          text-decoration: underline;
+        }
+        
+        .footer-text a:hover {
+          color: #cccccc;
+        }
+        
+        .copyright-text {
+          font-size: 12px;
+          color: #999999;
+          line-height: 1.4;
+        }
+        
+        .social-section {
+          text-align: right;
+        }
+        
+        .social-title {
+          font-size: 16px;
+          font-weight: bold;
+          color: #ffffff;
+          margin-bottom: 15px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+        
+        .social-link {
+          color: #cccccc;
+          text-decoration: none;
+          font-size: 13px;
+          display: block;
+          margin-bottom: 8px;
+          transition: color 0.2s ease;
+        }
+        
+        .social-link:hover {
+          color: #ffffff;
+          text-decoration: none;
+        }
+        
+        .social-icon {
+          margin-right: 8px;
+          font-size: 16px;
+        }
+        
+        @media (max-width: 768px) {
+          .site-footer {
+            padding: 30px 0 15px;
+          }
+          
+          .footer-links {
+            margin-bottom: 30px;
+          }
+          
+          .footer-link {
+            margin-bottom: 12px;
+          }
+          
+          .social-section {
+            text-align: left;
+            margin-top: 20px;
+          }
+          
+          .footer-bottom {
+            padding-top: 20px;
+          }
+        }
+        
+        @media (max-width: 576px) {
+          .footer-link {
+            font-size: 15px;
+            margin-bottom: 15px;
+          }
+          
+          .social-link {
+            font-size: 14px;
+            margin-bottom: 12px;
+          }
+        }
