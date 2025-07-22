@@ -27,9 +27,9 @@ const NewsCard: React.FC<NewsCardaSectionProps> = ({
 }) => {
   return (
     <>
-      <div className="NewsCard-container">
+      <div className="NewsCard-container bg-primary w-100">
         <a href="#" className="NewsCard-link">
-          <div className="NewsCard-image-wrapper">
+          <div className="NewsCard-image-wrapper bg-warning">
             <Image src={imageSrc} alt={imageAlt} width={600} height={600} className={imageSize} />
             <div className={classProp}>{newsType}</div>
           </div>
