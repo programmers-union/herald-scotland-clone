@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface ImageProps {
@@ -25,7 +26,7 @@ const ImageAndtitle: React.FC<ImageProps> = ({
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
         rel="stylesheet"
       />
-
+    <Link href={`/${category.toLowerCase()}/${slug}`} className='text-decoration-none text-reset'>
       <article className="investing-article">
         <a href="#" className="article-link">
           <div className="d-flex flex-row">
@@ -51,6 +52,7 @@ const ImageAndtitle: React.FC<ImageProps> = ({
           </div>
         </a>
       </article>
+      </Link>
     </>
   );
 };

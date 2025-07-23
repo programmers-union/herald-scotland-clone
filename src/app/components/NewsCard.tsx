@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface NewsCardaSectionProps {
@@ -27,9 +28,10 @@ const NewsCard: React.FC<NewsCardaSectionProps> = ({
 }) => {
   return (
     <>
-      <div className="NewsCard-container bg-primary w-100">
-        <a href="#" className="NewsCard-link">
-          <div className="NewsCard-image-wrapper bg-warning">
+     <Link href={`/${category.toLowerCase()}/${slug}`} className='text-decoration-none text-reset'>
+      <div className="NewsCard-container">
+        <div className="NewsCard-link">
+          <div className="NewsCard-image-wrapper ">
             <Image src={imageSrc} alt={imageAlt} width={600} height={600} className={imageSize} />
             <div className={classProp}>{newsType}</div>
           </div>
@@ -38,8 +40,9 @@ const NewsCard: React.FC<NewsCardaSectionProps> = ({
             <span className="NewsCard-category text-decoration-underline">{category}</span>
             <h2 className="NewsCard-headline">{title}</h2>
           </div>
-        </a>
+        </div>
       </div>
+      </Link>
     </>
   );
 };

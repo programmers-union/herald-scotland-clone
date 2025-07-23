@@ -143,7 +143,11 @@ const commentedData = [
 export default function Home() {
   return (
     <div className="container">
-      <FeaturedNewsletters />
+      <div className="d-none d-lg-block">
+  <FeaturedNewsletters />
+</div>
+
+      
       <ArticleSection
         title={businessData[15].title}
         subtitle={businessData[15].shortdescription}

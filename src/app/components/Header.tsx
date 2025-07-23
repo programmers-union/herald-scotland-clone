@@ -12,11 +12,11 @@ const HeraldHeader = () => {
 
   const navItems = [
     { label: "Business", slug: "business" },
-    { label: "Technology", slug: "technology" },
-    { label: "Sports", slug: "sports" },
-    { label: "Health", slug: "health" },
-    { label: "Science", slug: "science" },
     { label: "Politics", slug: "politics" },
+    { label: "Sports", slug: "sports" },
+    { label: "Technology", slug: "technology" },
+    { label: "Science", slug: "science" },
+    {label:"Health", slug:"health"}
   ];
 
   return (
@@ -27,6 +27,7 @@ const HeraldHeader = () => {
       />
 
       <header className="herald-header">
+        {/* Top Navigation - Hidden on mobile */}
         <div className="top-nav d-none d-lg-block">
           <div className="container-fluid">
             <div className="d-flex width100">
@@ -39,20 +40,39 @@ const HeraldHeader = () => {
           </div>
         </div>
 
+        {/* Logo Section */}
         <div className="logo-section">
           <div className="width100">
-            <div className="row align-items-center">
-              <div className="col-lg-8 col-12 text-center text-lg-start">
-                <a href="#" className="logo">
-                  <img src="/images/download.svg" alt="Site Logo" />
+            {/* Desktop Layout */}
+            <div className="row align-items-center d-none d-lg-flex">
+              <div className="col-lg-8 text-start">
+                <a href="/" className="logo">
+                 <img src="/images/download.svg" alt="" />
                 </a>
               </div>
-              <div className="col-lg-4 col-12 text-center text-lg-end">
-                <div className="d-flex justify-content-center justify-content-lg-end align-items-center header-buttons">
-                  <button className="btn btn-subscribe me-2">Subscribe</button>
-                  <button className="btn btn-secondary-custom me-2">Digital Edition</button>
-                  <button className="btn btn-secondary-custom me-2">Puzzles</button>
-                  <button className="user-icon">
+              <div className="col-lg-4 text-end">
+                <div className="d-flex justify-content-end align-items-center header-buttons">
+                  <button className="show-more-btn ">Subscribe</button>
+                  <button className="show-more-btn ">Digital Edition</button>
+                  <button className="show-more-btn me-2">Puzzles</button>
+                  <button className="show-more-btn me-2">
+                    <i className="fas fa-user"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Mobile Layout */}
+            <div className="row align-items-center d-flex d-lg-none mobile-header-row">
+              <div className="col-8 text-start">
+                <a href="/" className="logo">
+                 <img src="/images/download.svg" alt="" />
+                </a>
+              </div>
+              <div className="col-4 text-end ">
+                <div className="d-flex justify-content-end align-items-center mobile-header-buttons">
+                  <button className="show-more-btn ">Subscribe</button>
+                  <button className="show-more-btn">
                     <i className="fas fa-user"></i>
                   </button>
                 </div>
@@ -61,21 +81,13 @@ const HeraldHeader = () => {
           </div>
         </div>
 
+        {/* Main Navigation */}
         <nav className="navbar navbar-expand-lg main-nav">
           <div className="container-fluid">
-            <div className="d-flex width100 align-items-center">
-              <div className="d-lg-none">
-                <button 
-                  className="navbar-toggler menu-toggle"
-                  type="button"
-                  onClick={() => setShowMobileMenu(!showMobileMenu)}
-                >
-                  <i className="fas fa-bars"></i>
-                </button>
-              </div>
-
-              <div className={`navbar-collapse ${showMobileMenu ? 'show' : ''}`} id="navbarNav">
-                <ul className="navbar-nav me-auto">
+            <div className="width100">
+              {/* Desktop Navigation */}
+              <div className="d-none d-lg-flex justify-content-between align-items-center w-100">
+                <ul className="navbar-nav d-flex flex-row">
                   {navItems.map((item, index) => (
                     <li key={index} className="nav-item">
                       <Link href={`/${item.slug}`} className="nav-link">
@@ -84,25 +96,70 @@ const HeraldHeader = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
-
-              <div className="d-flex">
-                <button className="menu-toggle d-lg-none">
-                  <i className="fas fa-bars"></i>
-                </button>
                 <button className="search-toggle">
                   <i className="fas fa-search"></i>
                 </button>
               </div>
+
+              {/* Mobile Navigation */}
+              <div className="d-flex d-lg-none justify-content-between align-items-center w-100 mobile-nav-container">
+                <div className="d-flex align-items-center">
+                  <button 
+                    className="mobile-menu-toggle me-3"
+                    type="button"
+                    onClick={() => setShowMobileMenu(!showMobileMenu)}
+                  >
+                    <i className="fas fa-bars"></i>
+                  </button>
+                  
+                  {/* Mobile Categories - show first few */}
+                  <div className="mobile-categories d-flex">
+                    {navItems.slice(0,3).map((item, index) => (
+                      <Link 
+                        key={index} 
+                        href={`/${item.slug}`} 
+                        className="mobile-nav-link me-3"
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+                
+                <button className="mobile-search-toggle">
+                  <i className="fas fa-search"></i>
+                </button>
+              </div>
+
+              {/* Mobile Menu Dropdown */}
+              {showMobileMenu && (
+                <div className="mobile-menu-dropdown d-lg-none">
+                  <ul className="mobile-nav-list">
+                    {navItems.map((item, index) => (
+                      <li key={index} className="mobile-nav-item">
+                        <Link 
+                          href={`/${item.slug}`} 
+                          className="mobile-nav-dropdown-link"
+                          onClick={() => setShowMobileMenu(false)}
+                        >
+                          {item.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
           </div>
         </nav>
       </header>
 
-      <link 
-        rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-      />
+
+
+        <link 
+          rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        />
     </>
   );
 };

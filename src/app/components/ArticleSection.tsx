@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 interface ArticleSectionProps{
@@ -28,7 +29,7 @@ const ArticleSection: React.FC<ArticleSectionProps> = ({
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" 
         rel="stylesheet" 
       />
-      
+       <Link href={`/${category.toLowerCase()}/${slug}`} className='text-decoration-none text-reset'>
       <article className="article-section">
         <div className="container-fluid">
           <div className="row">
@@ -68,7 +69,9 @@ const ArticleSection: React.FC<ArticleSectionProps> = ({
           </div>
         </div>
       </article>
+      </Link>
     </>
+    
   );
 };
 
