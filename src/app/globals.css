@@ -74,7 +74,7 @@ a {
 
         .logo-section {
           background-color: white;
-          padding: 15px 0;
+          padding: 0px 0;
         }
 
         .logo {
@@ -338,9 +338,9 @@ a {
         }
         
         .featured-title {
-          color: #6c757d;
+          color: #333;
           font-size: 14px;
-          font-weight: normal;
+          font-weight:bold;
           margin: 0;
           display: flex;
           align-items: center;
@@ -361,11 +361,12 @@ a {
         }
         
         .newsletter-link {
-          color: #6c757d;
+          color: #333;
           text-decoration: none;
           font-size: 14px;
           transition: color 0.2s;
           white-space: nowrap;
+          font: weight 500;
         }
         
         .newsletter-link:hover {
@@ -377,20 +378,19 @@ a {
           background-color: #f5f5f5;
           border-bottom: 1px solid #e9ecef;
           font-family: Georgia, serif;
-          padding: 20px 0;
+          padding: 8px 0;
         }
         
         .employment-title {
-          color: #5a6c7d;
-          font-size: 16px;
-          font-weight: normal;
+          color: #333;
+          font-size: 15px;
+          font-weight:bold;
           margin: 0;
           line-height: 1.4;
         }
         
         .employment-link {
-          color: #5a6c7d;
-          text-decoration: underline;
+          color: #333;
           transition: color 0.2s;
         }
         
@@ -1007,11 +1007,12 @@ a {
           border: none;
           color: #333;
           background-color: #FFE7BD;
-          padding: 0.50rem 1rem;
+          padding: 0.10rem 1rem;
           border-radius: 25px;
-          font-weight: 500;
-          font-size: 0.9rem;
+          font-weight:bold;
+          font-size:small;
           transition: all 0.3s ease;
+        
           
        
         }

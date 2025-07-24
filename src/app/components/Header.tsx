@@ -32,7 +32,7 @@ const HeraldHeader = () => {
           <div className="container-fluid">
             <div className="d-flex width100">
               {topNavItems.map((item, index) => (
-                <a key={index} href="#" className="text-nowrap">
+                <a key={index} href="#" className="text-nowrap fw-bold text-dark">
                   {item}
                 </a>
               ))}
@@ -53,7 +53,7 @@ const HeraldHeader = () => {
               <div className="col-lg-4 text-end">
                 <div className="d-flex justify-content-end align-items-center header-buttons">
                   <button className="show-more-btn2 ">Subscribe</button>
-                  <button className="show-more-btn2 ">Digital Edition</button>
+                  <button className="show-more-btn2 ">Edition</button>
                   <button className="show-more-btn2 me-2">Puzzles</button>
                   <button className="show-more-btn2 me-2">
                     <i className="fas fa-user"></i>
@@ -90,7 +90,7 @@ const HeraldHeader = () => {
                 <ul className="navbar-nav d-flex flex-row">
                   {navItems.map((item, index) => (
                     <li key={index} className="nav-item">
-                      <Link href={`/${item.slug}`} className="nav-link">
+                      <Link href={`/${item.slug}`} className="nav-link fw-bold">
                         {item.label}
                       </Link>
                     </li>
