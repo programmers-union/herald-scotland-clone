@@ -160,12 +160,12 @@ export default function Home() {
       <div className="row">
         <div className="col-lg-4">
           <NewsCard
-            title={entertainmentData[0].title}
-            subtitle={entertainmentData[0].shortdescription}
-            imageSrc={entertainmentData[0].image}
-            category={entertainmentData[0].category}
-            slug={entertainmentData[0].slug}
-            imageAlt={entertainmentData[0].title}
+            title={businessData[0].title}
+            subtitle={businessData[0].shortdescription}
+            imageSrc={businessData[0].image}
+            category={businessData[0].category}
+            slug={businessData[0].slug}
+            imageAlt={businessData[0].title}
             newsType="EXCLUSIVE"
             classProp="NewsCard-exclusive-tag"
             imageSize="NewsCard-image "
@@ -456,92 +456,92 @@ export default function Home() {
         </div>
       </div>
       <div className="col-lg-12">
-        <h2 className=" columnists-title text-decoration-underline">News</h2>
+        <h2 className=" columnists-title text-decoration-underline">Entertainment</h2>
       </div>
       <div className="row">
         <div className="col-lg-4">
           <ImageAndtitle
-            title={businessData[3].title}
-            imageSrc={businessData[3].image}
-            imageAlt={businessData[3].title}
-            category={businessData[3].category}
-            slug={businessData[3].slug}
+            title={entertainmentData[0].title}
+            imageSrc={entertainmentData[0].image}
+            imageAlt={entertainmentData[0].title}
+            category={entertainmentData[0].category}
+            slug={entertainmentData[0].slug}
           />
         </div>
         <div className="col-lg-4">
           <ImageAndtitle
-            title={businessData[4].title}
-            imageSrc={businessData[4].image}
-            imageAlt={businessData[4].title}
-            category={businessData[4].category}
-            slug={businessData[4].slug}
+            title={entertainmentData[1].title}
+            imageSrc={entertainmentData[1].image}
+            imageAlt={entertainmentData[1].title}
+            category={entertainmentData[1].category}
+            slug={entertainmentData[1].slug}
           />
         </div>
         <div className="col-lg-4">
           <ImageAndtitle
-            title={businessData[5].title}
-            imageSrc={businessData[5].image}
-            imageAlt={businessData[5].title}
-            category={businessData[5].category}
-            slug={businessData[5].slug}
-          />
-        </div>
-      </div>
-      <div className="row py-3">
-        <div className="col-lg-4">
-          <ImageAndtitle
-            title={businessData[6].title}
-            imageSrc={businessData[6].image}
-            imageAlt={businessData[6].title}
-            category={businessData[6].category}
-            slug={businessData[6].slug}
-          />
-        </div>
-        <div className="col-lg-4">
-          <ImageAndtitle
-            title={businessData[7].title}
-            imageSrc={businessData[7].image}
-            imageAlt={businessData[7].title}
-            category={businessData[7].category}
-            slug={businessData[7].slug}
-          />
-        </div>
-        <div className="col-lg-4">
-          <ImageAndtitle
-            title={businessData[8].title}
-            imageSrc={businessData[8].image}
-            imageAlt={businessData[8].title}
-            category={businessData[8].category}
-            slug={businessData[8].slug}
+            title={entertainmentData[2].title}
+            imageSrc={entertainmentData[2].image}
+            imageAlt={entertainmentData[2].title}
+            category={entertainmentData[2].category}
+            slug={entertainmentData[2].slug}
           />
         </div>
       </div>
       <div className="row py-3">
         <div className="col-lg-4">
           <ImageAndtitle
-            title={businessData[9].title}
-            imageSrc={businessData[9].image}
-            imageAlt={businessData[9].title}
-            category={businessData[9].category}
-            slug={businessData[9].slug}
+            title={entertainmentData[3].title}
+            imageSrc={entertainmentData[3].image}
+            imageAlt={entertainmentData[3].title}
+            category={entertainmentData[3].category}
+            slug={entertainmentData[3].slug}
           />
         </div>
         <div className="col-lg-4">
           <ImageAndtitle
-            title={businessData[10].title}
-            imageSrc={businessData[10].image}
-            imageAlt={businessData[10].title}
-            category={businessData[10].category}
-            slug={businessData[10].slug}
+            title={entertainmentData[4].title}
+            imageSrc={entertainmentData[4].image}
+            imageAlt={entertainmentData[4].title}
+            category={entertainmentData[4].category}
+            slug={entertainmentData[4].slug}
           />
         </div>
         <div className="col-lg-4">
           <ImageAndtitle
-            title={businessData[11].title}
-            imageSrc={businessData[11].image}
-            imageAlt={businessData[11].title}
-            category={businessData[11].category}
-            slug={businessData[11].slug}
+            title={entertainmentData[5].title}
+            imageSrc={entertainmentData[5].image}
+            imageAlt={entertainmentData[5].title}
+            category={entertainmentData[5].category}
+            slug={entertainmentData[5].slug}
+          />
+        </div>
+      </div>
+      <div className="row py-3">
+        <div className="col-lg-4">
+          <ImageAndtitle
+            title={entertainmentData[6].title}
+            imageSrc={entertainmentData[6].image}
+            imageAlt={entertainmentData[6].title}
+            category={entertainmentData[6].category}
+            slug={entertainmentData[6].slug}
+          />
+        </div>
+        <div className="col-lg-4">
+          <ImageAndtitle
+            title={entertainmentData[7].title}
+            imageSrc={entertainmentData[7].image}
+            imageAlt={entertainmentData[7].title}
+            category={entertainmentData[7].category}
+            slug={entertainmentData[7].slug}
+          />
+        </div>
+        <div className="col-lg-4">
+          <ImageAndtitle
+            title={entertainmentData[8].title}
+            imageSrc={entertainmentData[8].image}
+            imageAlt={entertainmentData[8].title}
+            category={entertainmentData[8].category}
+            slug={entertainmentData[8].slug}
           />
         </div>
       </div>

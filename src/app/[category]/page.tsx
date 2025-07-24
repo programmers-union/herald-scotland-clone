@@ -17,6 +17,7 @@ type Article = {
   description: string;
   image: string;
   slug: string;
+  date?:string
 };
 
 interface PageProps {
