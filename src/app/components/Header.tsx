@@ -52,10 +52,10 @@ const HeraldHeader = () => {
               </div>
               <div className="col-lg-4 text-end">
                 <div className="d-flex justify-content-end align-items-center header-buttons">
-                  <button className="show-more-btn ">Subscribe</button>
-                  <button className="show-more-btn ">Digital Edition</button>
-                  <button className="show-more-btn me-2">Puzzles</button>
-                  <button className="show-more-btn me-2">
+                  <button className="show-more-btn2 ">Subscribe</button>
+                  <button className="show-more-btn2 ">Digital Edition</button>
+                  <button className="show-more-btn2 me-2">Puzzles</button>
+                  <button className="show-more-btn2 me-2">
                     <i className="fas fa-user"></i>
                   </button>
                 </div>
@@ -63,16 +63,16 @@ const HeraldHeader = () => {
             </div>
 
             {/* Mobile Layout */}
-            <div className="row align-items-center d-flex d-lg-none mobile-header-row">
-              <div className="col-8 text-start">
-                <a href="/" className="logo">
-                 <img src="/images/download.svg" alt="" />
+            <div className="row align-items-center d-flex d-lg-none mobile-header-row px-2">
+              <div className="col-6 ">
+                <a href="/" className="logo ">
+                 <img className='logo-img' src="/images/download.svg" alt="" />
                 </a>
               </div>
-              <div className="col-4 text-end ">
+              <div className="col-6  ">
                 <div className="d-flex justify-content-end align-items-center mobile-header-buttons">
-                  <button className="show-more-btn ">Subscribe</button>
-                  <button className="show-more-btn">
+                  <button className="show-more-btn2 ">Subscribe</button>
+                  <button className="show-more-btn2">
                     <i className="fas fa-user"></i>
                   </button>
                 </div>

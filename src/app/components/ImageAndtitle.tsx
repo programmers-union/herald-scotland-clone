@@ -28,7 +28,7 @@ const ImageAndtitle: React.FC<ImageProps> = ({
       />
     <Link href={`/${category.toLowerCase()}/${slug}`} className='text-decoration-none text-reset'>
       <article className="investing-article">
-        <a href="#" className="article-link">
+        <a  className="article-link">
           <div className="d-flex flex-row">
             {/* Article Image */}
             <div className="flex-shrink-0">
