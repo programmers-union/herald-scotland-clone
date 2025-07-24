@@ -4,6 +4,7 @@ import technologyData from '../../../../public/data/technology.json';
 import sportsData from '../../../../public/data/sports.json';
 import scienceData from '../../../../public/data/science.json';
 import healthData from '../../../../public/data/health.json';
+import entertainmentData from '../../../../public/data/entertainment.json';
 import { hydrateRoot } from 'react-dom/client';
 import DetailComponent from '@/app/components/DetailComponent';
 
@@ -33,6 +34,7 @@ export async function generateStaticParams() {
     { category: 'sports', articles: sportsData },
     { category: 'science', articles: scienceData },
     { category: 'health', articles: healthData },
+    {category:'entertainment',articles:entertainmentData}
   ];
 
   const params: { category: string; slug: string }[] = [];
@@ -73,11 +75,14 @@ export default async function DetailPage({ params }: PageProps) {
     case 'politics':
       filteredArticles = politicsData;
       break;
+    case'entertainment':
+      filteredArticles=entertainmentData
     default:
       break;
   }
 
   const article = filteredArticles.find((item) => item.slug === slug);
+  console.log("article:",article)
 
   if (!article) {
     return <div className="p-4">No article found for slug: {slug}</div>;

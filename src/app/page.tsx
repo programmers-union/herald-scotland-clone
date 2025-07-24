@@ -8,6 +8,7 @@ import technologyData from "../../public/data/technology.json";
 import sportsData from "../../public/data/sports.json";
 import scienceData from "../../public/data/science.json";
 import healthData from "../../public/data/health.json";
+import entertainmentData from "../../public/data/entertainment.json";
 import NewsCard from "./components/NewsCard";
 import ImageAndtitle from "./components/ImageAndtitle";
 import ExampleNewsSection from "./components/NewsSection";
@@ -159,12 +160,12 @@ export default function Home() {
       <div className="row">
         <div className="col-lg-4">
           <NewsCard
-            title={businessData[0].title}
-            subtitle={businessData[0].shortdescription}
-            imageSrc={businessData[0].image}
-            category={businessData[0].category}
-            slug={businessData[0].slug}
-            imageAlt={businessData[0].title}
+            title={entertainmentData[0].title}
+            subtitle={entertainmentData[0].shortdescription}
+            imageSrc={entertainmentData[0].image}
+            category={entertainmentData[0].category}
+            slug={entertainmentData[0].slug}
+            imageAlt={entertainmentData[0].title}
             newsType="EXCLUSIVE"
             classProp="NewsCard-exclusive-tag"
             imageSize="NewsCard-image "

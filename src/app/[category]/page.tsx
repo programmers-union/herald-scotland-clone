@@ -4,6 +4,7 @@ import technologyData from "../../../public/data/technology.json";
 import sportsData from "../../../public/data/sports.json";
 import scienceData from "../../../public/data/science.json";
 import healthData from "../../../public/data/health.json";
+import entertainmentData from  "../../../public/data/entertainment.json";
 import ArticleSection from "../components/ArticleSection";
 import NewsCard from "../components/NewsCard";
 import ArticleHero from "../components/ArticleHero";
@@ -33,6 +34,7 @@ export async function generateStaticParams() {
     { category: "sports" },
     { category: "science" },
     { category: "health" },
+    {category:"entertainment"}
   ];
 }
 
@@ -61,6 +63,8 @@ export default async function CategoryPage({ params }: PageProps) {
     case "politics":
       filteredArticles = politicsData;
       break;
+      case "entertainment":
+        filteredArticles=entertainmentData
 
     default:
       break;

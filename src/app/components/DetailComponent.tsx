@@ -218,11 +218,12 @@ const DetailComponent: React.FC<ArticleSectionProps> = ({
           </div>
           <div className="py-3">
             {description
-              .split(".")
+              .split(". ")
               .filter((sentence) => sentence.trim() !== "")
               .map((sentence, index) => (
                 <p key={index}>{sentence.trim()}.</p>
               ))}
+             
           </div>
         </div>
 
