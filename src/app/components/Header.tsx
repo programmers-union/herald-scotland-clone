@@ -16,7 +16,9 @@ const HeraldHeader = () => {
     { label: "Sports", slug: "sports" },
     { label: "Technology", slug: "technology" },
     { label: "Science", slug: "science" },
-    {label:"Health", slug:"health"}
+    {label:"Health", slug:"health"},
+    {label:"Entertainment",slug:"entertainment"},
+    {label  :"Education",slug:"education"}
   ];
 
   return (

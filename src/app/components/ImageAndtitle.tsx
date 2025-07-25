@@ -28,7 +28,7 @@ const ImageAndtitle: React.FC<ImageProps> = ({
       />
     <Link href={`/${category.toLowerCase()}/${slug}`} className='text-decoration-none text-reset'>
       <article className="investing-article">
-        <a  className="article-link">
+        <span  className="article-link">
           <div className="d-flex flex-row">
             {/* Article Image */}
             <div className="flex-shrink-0">
@@ -50,7 +50,7 @@ const ImageAndtitle: React.FC<ImageProps> = ({
               </h2>
             </div>
           </div>
-        </a>
+        </span>
       </article>
       </Link>
     </>

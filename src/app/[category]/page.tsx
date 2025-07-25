@@ -5,6 +5,7 @@ import sportsData from "../../../public/data/sports.json";
 import scienceData from "../../../public/data/science.json";
 import healthData from "../../../public/data/health.json";
 import entertainmentData from  "../../../public/data/entertainment.json";
+import educationData from  "../../../public/data/education.json";
 import ArticleSection from "../components/ArticleSection";
 import NewsCard from "../components/NewsCard";
 import ArticleHero from "../components/ArticleHero";
@@ -35,7 +36,8 @@ export async function generateStaticParams() {
     { category: "sports" },
     { category: "science" },
     { category: "health" },
-    {category:"entertainment"}
+    {category:"entertainment"},
+    {category:"education"}
   ];
 }
 
@@ -66,7 +68,9 @@ export default async function CategoryPage({ params }: PageProps) {
       break;
       case "entertainment":
         filteredArticles=entertainmentData
-
+        break;
+      case "education":
+        filteredArticles=educationData
     default:
       break;
   }
@@ -84,11 +88,11 @@ export default async function CategoryPage({ params }: PageProps) {
         <div className="col-lg-8">
           <ArticleHero
             authorName="KRISTY DORSEY"
-            category={filteredArticles[0].category}
-            title={filteredArticles[0].title}
-            imageSrc={filteredArticles[0].image}
-            imageAlt={filteredArticles[0].title}
-            slug={filteredArticles[0].slug}
+            category={filteredArticles[16].category}
+            title={filteredArticles[16].title}
+            imageSrc={filteredArticles[16].image}
+            imageAlt={filteredArticles[16].title}
+            slug={filteredArticles[16].slug}
           />
         </div>
         <div className="col-lg-4">
@@ -272,34 +276,34 @@ export default async function CategoryPage({ params }: PageProps) {
         </div>
         <div className="col-lg-3">
           <NewsCard
-            title={filteredArticles[5].title}
-            subtitle={filteredArticles[5].shortdescription}
-            imageSrc={filteredArticles[5].image}
-            category={filteredArticles[5].category}
-            slug={filteredArticles[5].slug}
-            imageAlt={filteredArticles[5].title}
+            title={filteredArticles[17].title}
+            subtitle={filteredArticles[17].shortdescription}
+            imageSrc={filteredArticles[17].image}
+            category={filteredArticles[17].category}
+            slug={filteredArticles[17].slug}
+            imageAlt={filteredArticles[17].title}
             imageSize="NewsCard-image-small"
           />
         </div>
         <div className="col-lg-3">
           <NewsCard
-            title={filteredArticles[6].title}
-            subtitle={filteredArticles[6].shortdescription}
-            imageSrc={filteredArticles[6].image}
-            category={filteredArticles[6].category}
-            slug={filteredArticles[6].slug}
-            imageAlt={filteredArticles[6].title}
+            title={filteredArticles[18].title}
+            subtitle={filteredArticles[18].shortdescription}
+            imageSrc={filteredArticles[18].image}
+            category={filteredArticles[18].category}
+            slug={filteredArticles[18].slug}
+            imageAlt={filteredArticles[18].title}
             imageSize="NewsCard-image-small"
           />
         </div>
         <div className="col-lg-3">
           <NewsCard
-            title={filteredArticles[7].title}
-            subtitle={filteredArticles[7].shortdescription}
-            imageSrc={filteredArticles[7].image}
-            category={filteredArticles[7].category}
-            slug={filteredArticles[7].slug}
-            imageAlt={filteredArticles[7].title}
+            title={filteredArticles[19].title}
+            subtitle={filteredArticles[19].shortdescription}
+            imageSrc={filteredArticles[19].image}
+            category={filteredArticles[19].category}
+            slug={filteredArticles[19].slug}
+            imageAlt={filteredArticles[19].title}
             imageSize="NewsCard-image-small"
           />
         </div>
@@ -309,55 +313,55 @@ export default async function CategoryPage({ params }: PageProps) {
       </div>
       <h2 className="columnists-title text-decoration-underline">Latest</h2>
       <ArticleSection
-        title={filteredArticles[8].title}
-        subtitle={filteredArticles[8].shortdescription}
-        imageSrc={filteredArticles[8].image}
-        category={filteredArticles[8].category}
-        slug={filteredArticles[8].slug}
-        imageAlt={filteredArticles[8].title}
+        title={filteredArticles[20].title}
+        subtitle={filteredArticles[20].shortdescription}
+        imageSrc={filteredArticles[20].image}
+        category={filteredArticles[20].category}
+        slug={filteredArticles[20].slug}
+        imageAlt={filteredArticles[20].title}
       />
       <div className="row">
         <div className="col-lg-3">
           <NewsCard
-            title={filteredArticles[9].title}
-            subtitle={filteredArticles[9].shortdescription}
-            imageSrc={filteredArticles[9].image}
-            category={filteredArticles[9].category}
-            slug={filteredArticles[9].slug}
-            imageAlt={filteredArticles[9].title}
+            title={filteredArticles[21].title}
+            subtitle={filteredArticles[21].shortdescription}
+            imageSrc={filteredArticles[21].image}
+            category={filteredArticles[21].category}
+            slug={filteredArticles[21].slug}
+            imageAlt={filteredArticles[21].title}
             imageSize="NewsCard-image-small"
           />
         </div>
         <div className="col-lg-3">
           <NewsCard
-            title={filteredArticles[10].title}
-            subtitle={filteredArticles[10].shortdescription}
-            imageSrc={filteredArticles[10].image}
-            category={filteredArticles[10].category}
-            slug={filteredArticles[10].slug}
-            imageAlt={filteredArticles[10].title}
+            title={filteredArticles[22].title}
+            subtitle={filteredArticles[22].shortdescription}
+            imageSrc={filteredArticles[22].image}
+            category={filteredArticles[22].category}
+            slug={filteredArticles[22].slug}
+            imageAlt={filteredArticles[22].title}
             imageSize="NewsCard-image-small"
           />
         </div>
         <div className="col-lg-3">
           <NewsCard
-            title={filteredArticles[11].title}
-            subtitle={filteredArticles[11].shortdescription}
-            imageSrc={filteredArticles[11].image}
-            category={filteredArticles[11].category}
-            slug={filteredArticles[11].slug}
-            imageAlt={filteredArticles[11].title}
+            title={filteredArticles[23].title}
+            subtitle={filteredArticles[23].shortdescription}
+            imageSrc={filteredArticles[23].image}
+            category={filteredArticles[23].category}
+            slug={filteredArticles[23].slug}
+            imageAlt={filteredArticles[23].title}
             imageSize="NewsCard-image-small"
           />
         </div>
         <div className="col-lg-3">
           <NewsCard
-            title={filteredArticles[12].title}
-            subtitle={filteredArticles[12].shortdescription}
-            imageSrc={filteredArticles[12].image}
-            category={filteredArticles[12].category}
-            slug={filteredArticles[12].slug}
-            imageAlt={filteredArticles[12].title}
+            title={filteredArticles[24].title}
+            subtitle={filteredArticles[24].shortdescription}
+            imageSrc={filteredArticles[24].image}
+            category={filteredArticles[24].category}
+            slug={filteredArticles[24].slug}
+            imageAlt={filteredArticles[24].title}
             imageSize="NewsCard-image-small"
           />
         </div>
@@ -368,31 +372,31 @@ export default async function CategoryPage({ params }: PageProps) {
       <div className="row">
         <div className="col-lg-4">
           <TennisSection
-            sectionTitle={filteredArticles[0].category}
-            category={filteredArticles[0].category}
-            articleTitle={filteredArticles[0].title}
-            imageSrc={filteredArticles[0].image}
-            imageAlt={filteredArticles[0].title}
+            sectionTitle={filteredArticles[25].category}
+            category={filteredArticles[25].category}
+            articleTitle={filteredArticles[25].title}
+            imageSrc={filteredArticles[25].image}
+            imageAlt={filteredArticles[25].title}
             moreLink={category}
           />
         </div>
         <div className="col-lg-4">
           <TennisSection
-            sectionTitle={filteredArticles[1].category}
-            category={filteredArticles[1].category}
-            articleTitle={filteredArticles[1].title}
-            imageSrc={filteredArticles[1].image}
-            imageAlt={filteredArticles[1].title}
+            sectionTitle={filteredArticles[26].category}
+            category={filteredArticles[26].category}
+            articleTitle={filteredArticles[26].title}
+            imageSrc={filteredArticles[26].image}
+            imageAlt={filteredArticles[26].title}
             moreLink={category}
           />
         </div>
         <div className="col-lg-4">
           <TennisSection
-            sectionTitle={filteredArticles[2].category}
-            category={filteredArticles[2].category}
-            articleTitle={filteredArticles[2].title}
-            imageSrc={filteredArticles[2].image}
-            imageAlt={filteredArticles[2].title}
+            sectionTitle={filteredArticles[27].category}
+            category={filteredArticles[27].category}
+            articleTitle={filteredArticles[27].title}
+            imageSrc={filteredArticles[27].image}
+            imageAlt={filteredArticles[27].title}
             moreLink={category}
           />
         </div>
@@ -400,31 +404,31 @@ export default async function CategoryPage({ params }: PageProps) {
       <div className="row">
         <div className="col-lg-4">
           <TennisSection
-            sectionTitle={filteredArticles[6].category}
-            category={filteredArticles[6].category}
-            articleTitle={filteredArticles[6].title}
-            imageSrc={filteredArticles[6].image}
-            imageAlt={filteredArticles[6].title}
+            sectionTitle={filteredArticles[28].category}
+            category={filteredArticles[28].category}
+            articleTitle={filteredArticles[28].title}
+            imageSrc={filteredArticles[28].image}
+            imageAlt={filteredArticles[28].title}
             moreLink={category}
           />
         </div>
         <div className="col-lg-4">
           <TennisSection
-            sectionTitle={filteredArticles[7].category}
-            category={filteredArticles[7].category}
-            articleTitle={filteredArticles[7].title}
-            imageSrc={filteredArticles[7].image}
-            imageAlt={filteredArticles[7].title}
+            sectionTitle={filteredArticles[29].category}
+            category={filteredArticles[29].category}
+            articleTitle={filteredArticles[29].title}
+            imageSrc={filteredArticles[29].image}
+            imageAlt={filteredArticles[29].title}
             moreLink={category}
           />
         </div>
         <div className="col-lg-4">
           <TennisSection
-            sectionTitle={filteredArticles[8].category}
-            category={filteredArticles[8].category}
-            articleTitle={filteredArticles[8].title}
-            imageSrc={filteredArticles[8].image}
-            imageAlt={filteredArticles[8].title}
+            sectionTitle={filteredArticles[30].category}
+            category={filteredArticles[30].category}
+            articleTitle={filteredArticles[30].title}
+            imageSrc={filteredArticles[30].image}
+            imageAlt={filteredArticles[30].title}
             moreLink={category}
           />
         </div>
