@@ -83,8 +83,7 @@ export default async function CategoryPage({ params }: PageProps) {
 
   return (
     <div className="container">
-      c
-      <div className="row">
+      <div className="row py-5">
         <div className="col-lg-8">
           <ArticleHero
             authorName="KRISTY DORSEY"
