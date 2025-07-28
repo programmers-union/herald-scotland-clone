@@ -60,7 +60,7 @@ const ArticleSection: React.FC<ArticleSectionProps> = ({
                   width={600}
                   height={400}
                 />
-                <div className="image-overlay"></div>
+                <div className=""></div>
                 <div className="author-tag">
                   BRIAN DONNELLY
                 </div>
