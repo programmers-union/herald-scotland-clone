@@ -5,7 +5,7 @@ import sportsData from '../../../../public/data/sports.json';
 import scienceData from '../../../../public/data/science.json';
 import healthData from '../../../../public/data/health.json';
 import entertainmentData from '../../../../public/data/entertainment.json';
-import { hydrateRoot } from 'react-dom/client';
+import educationData from '../../../../public/data/education.json'; 
 import DetailComponent from '@/app/components/DetailComponent';
 
 
@@ -34,7 +34,8 @@ export async function generateStaticParams() {
     { category: 'sports', articles: sportsData },
     { category: 'science', articles: scienceData },
     { category: 'health', articles: healthData },
-    {category:'entertainment',articles:entertainmentData}
+    {category:'entertainment',articles:entertainmentData},
+    {category:'education',articles:educationData}
   ];
 
   const params: { category: string; slug: string }[] = [];
@@ -76,7 +77,9 @@ export default async function DetailPage({ params }: PageProps) {
       filteredArticles = politicsData;
       break;
     case'entertainment':
-      filteredArticles=entertainmentData
+      filteredArticles=entertainmentData;
+    case 'education':
+      filteredArticles=educationData
     default:
       break;
   }
