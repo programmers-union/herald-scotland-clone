@@ -6,6 +6,7 @@ import scienceData from "../../../public/data/science.json";
 import healthData from "../../../public/data/health.json";
 import entertainmentData from  "../../../public/data/entertainment.json";
 import educationData from  "../../../public/data/education.json";
+import lifestyleData from  "../../../public/data/lifestyle.json";
 import ArticleSection from "../components/ArticleSection";
 import NewsCard from "../components/NewsCard";
 import ArticleHero from "../components/ArticleHero";
@@ -37,7 +38,8 @@ export async function generateStaticParams() {
     { category: "science" },
     { category: "health" },
     {category:"entertainment"},
-    {category:"education"}
+    {category:"education"},
+    {category:"lifestyle"}
   ];
 }
 
@@ -70,7 +72,10 @@ export default async function CategoryPage({ params }: PageProps) {
         filteredArticles=entertainmentData
         break;
       case "education":
-        filteredArticles=educationData
+        filteredArticles=educationData;
+        break;
+      case "lifestyle":
+        filteredArticles=lifestyleData;
     default:
       break;
   }

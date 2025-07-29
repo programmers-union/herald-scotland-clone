@@ -18,7 +18,8 @@ const HeraldHeader = () => {
     { label: "Science", slug: "science" },
     {label:"Health", slug:"health"},
     {label:"Entertainment",slug:"entertainment"},
-    {label  :"Education",slug:"education"}
+    {label  :"Education",slug:"education"},
+    {label:"Lifestyle",slug:"lifestyle"}
   ];
 
   return (
