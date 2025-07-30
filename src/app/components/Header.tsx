@@ -50,7 +50,7 @@ const HeraldHeader = () => {
             <div className="row align-items-center d-none d-lg-flex">
               <div className="col-lg-8 text-start">
                 <a href="/" className="logo">
-                 <img src="/images/download.svg" alt="" />
+                 <img src="/images/download.svg"className='logoimg' alt="" />
                 </a>
               </div>
               <div className="col-lg-4 text-end">

@@ -52,6 +52,9 @@ a {
         .logo-img{
           width: 100%;
         }
+        .logoimg{
+          padding-left:55%;
+        }
 
         .top-nav {
           background-color: #f8f9fa;
